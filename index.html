@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seoyoung</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+          $('#hamburger').click(function() {$('.navbar_menu').toggleClass('active') })
+        })
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <img src="src/logo.png" alt="logo">
+            <a href="/">SEOYOUNG</a>
+        </div>
+        
+        <ul class="navbar_menu">
+            <li><a href="">Intoduce</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Experience</a></li>
+        </ul>
+
+        <a href="#" class="navbar_toggle">
+            <img id="hamburger" src="src/hamburger.png" alt="logo">
+        </a>
+    
+    </nav>
+</body>
+</html>
