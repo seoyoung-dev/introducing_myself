@@ -4,6 +4,13 @@
     --accent-color: #E4F0D5;
 }
 
+.page {
+    display: none;
+}
+.active {
+    display: block;
+}
+
 body { 
     margin: 0;
     color: var(--text-color);

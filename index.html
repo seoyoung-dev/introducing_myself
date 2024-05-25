@@ -13,6 +13,33 @@
     <script>
         $(document).ready(function() {
           $('#hamburger').click(function() {$('.navbar_menu').toggleClass('active') })
+          const pages = $('.page');
+          const links = $('ul a');
+
+          function showPage(hash) {
+            console.log('hash', hash)
+                $('.page').removeClass('active');
+                $(hash).addClass('active');
+            }
+
+            $(window).on('hashchange', function() {
+                showPage(window.location.hash);
+    
+            });
+
+            // Initial load
+            if (window.location.hash) {
+                showPage(window.location.hash);
+            } else {
+                window.location.hash = '#introduce';
+                showPage('#introduce');
+            }
+
+            $('nav a').on('click', function(event) {
+                event.preventDefault();
+                window.location.hash = $(this).attr('href');
+            });
+
         })
     </script>
 </head>
@@ -24,15 +51,32 @@
         </div>
         
         <ul class="navbar_menu">
-            <li><a href="">Intoduce</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Experience</a></li>
+            <li><a href="#introduce">Intoduce</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#experience">Experience</a></li>
         </ul>
 
-        <a href="#" class="navbar_toggle">
+        <a href="" class="navbar_toggle">
             <img id="hamburger" src="src/hamburger.png" alt="logo">
         </a>
-    
+
+       
     </nav>
+    <section>
+        <div id="introduce" class="page active">
+            <h1>introduce</h1>
+            <p>Welcome to the home page!</p>
+        </div>
+        <div id="project" class="page">
+            <h1>porject</h1>
+            <p>This is the about page.</p>
+        </div>
+        <div id="experience" class="page">
+            <h1>experience</h1>
+            <p>Get in touch with us.</p>
+        </div>
+    
+    </section>
+    <footer></footer>
 </body>
 </html>
