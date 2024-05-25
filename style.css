@@ -8,6 +8,7 @@
 .page {
     display: none;
 }
+
 .active {
     display: block;
 }
@@ -24,6 +25,10 @@ body {
 a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+p {
+    line-height: 2.1;
 }
 
 /* navbar */
@@ -81,7 +86,7 @@ section {
 }
 
 .page {
-    width: 600px;
+    width: 650px;
     margin: 0 auto;
 }
 
@@ -93,6 +98,7 @@ section {
 
 .section_introduce_rol1 {
     display: flex;
+    margin-bottom: 40px;
 }
 
 .section_introduce_rol1 > img {
