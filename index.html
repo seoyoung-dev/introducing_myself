@@ -47,7 +47,7 @@
     <nav class="navbar">
         <div class="navbar_logo">
             <img src="src/logo.png" alt="logo">
-            <a href="/">SEOYOUNG</a>
+            <a href="#introduce">SEOYOUNG</a>
         </div>
         
         <ul class="navbar_menu">
@@ -59,9 +59,8 @@
         <a href="" class="navbar_toggle">
             <img id="hamburger" src="src/hamburger.png" alt="logo">
         </a>
-
-       
     </nav>
+
     <section>
         <div id="introduce" class="page active">
             <div class="section_introduce">
@@ -95,14 +94,59 @@
 
         <div id="project" class="page">
             <h1 class="section_header">Project.</h1>
-            <p>This is the about page.</p>
+            <h3 class="section_experience_header">초록친구(Greenery 2.0)</h3>
+            <p><a href="https://github.com/JoAndKim/greenery-frontend" class="link">소스 코드</a>&nbsp; <b>&#124;</b>&nbsp; Next.js, Recoil, Styled-component</p>
+            <div class="project_description">
+                내가 키우는 식물을 자랑하고 사람들과 정보를 공유하는 소통의 장을 제공합니다.<br>
+                반려 식물이 없는 사용자에게는 여러 가지 환경 변수를 고려하여 키우기 적합한 식물을 추천합니다.
+            </div>
+            <div class="section_experience_rol last_row">
+                <div>
+                    <p><b>Frontend 개발</b></p>
+                    <p>2022.04.-now</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>프론트엔드 개발 전반 담당</li>
+                        <li>기존에 React로 완성된 프로젝트를 Next.js로 다시 개발</li>
+                        <li>여러 페이지에서 반복 사용되는 작은 단위의 컴포넌트부터 bottom-up 방식으로 개발</li>
+                        <li>페이지 초기 진입 속도 향상과 SEO 개선을 위해 Next.js를 이용한 SSR 적용</li>
+                        <li>Access Token(JWT)를 이용한 사용자 인증 구현</li>
+                        <li>앱 전역의 상태를 관리하기 위해 Recoil 사용</li>
+                        <li>시맨틱 태그 사용과 보조 텍스트 활용을 통해 웹접근성 개선</li>
+                        <li>반응형 UI 구현을 통한 사용자 경험 개선</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="section_experience_header">PRESIDENT 101</h3>
+            <p><a href="https://github.com/seoyoung-dev/president-101" class="link">소스 코드</a>&nbsp; <b>&#124;</b>&nbsp; JavaScript, CSS, HTML</p>
+            <div class="project_description">
+                대선 후보들의 재산, 전과, 학력 등의 상세 정보를 한 번에 파악할 수 있습니다.<br>
+                부동산, 신재생 에너지 등 중점 이슈에 대한 후보들의 공약을 비교하고 후보자의 공약에 찬성 또는 반대를 투표할 수 있습니다.
+            </div>
+            <div class="section_experience_rol">
+                <div>
+                    <p><b>Frontend 개발</b></p>
+                    <p>2021.12.-2022.01.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Vanila JavaScript를 이용하여 서비스 개발</li>
+                        <li>이론으로 배운 개념을 프로젝트에 실제로 활용하며 JavaScript에 대한 이해도를 넓힘</li>
+                        <li>git-flow를 사용하여 팀 프로젝트 개발 프로세스 정립</li>
+                        <li>메인기능인 후보자 정보 페이지 제작</li>
+                        <li>서버에서 받아온 데이터를 가공하여 후보자 정보를 사용자에게 보이는 기능 개발</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div id="experience" class="page">
             <h1 class="section_header">Experience.</h1>
 
             <h3 class="section_experience_header">Education.</h3>
-            <div class="section_experience_rol1">
+            <div class="section_experience_rol">
                 <div>
                     <p><b>강원대학교 컴퓨터공학과</b></p>
                     <p>2024.03.-now</p>
@@ -113,7 +157,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="section_experience_rol1 experience_last_row">
+            <div class="section_experience_rol last_row">
                 <div class="what">
                     <p><b>엘리스 SW 엔지니어 트랙</b></p>
                     <p>2021.11.-2022.02.</p>
@@ -128,7 +172,7 @@
                 </div>
             </div>
             <h3 class="section_experience_header">Study.</h3>
-            <div class="section_experience_rol1">
+            <div class="section_experience_rol">
                 <div>
                     <p><b>프론드엔드 기술면접 스터디</b></p>
                     <p>2022.06.-2022.07.</p>
@@ -142,7 +186,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="section_experience_rol1">
+            <div class="section_experience_rol">
                 <div class="what">
                     <p><b>리액트 스터디</b></p>
                     <p>2022.05.-2022.06.</p>
@@ -155,7 +199,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="section_experience_rol1 experience_last_row">
+            <div class="section_experience_rol last_row">
                 <div class="what">
                     <p><b>자바스크립트 스터디</b></p>
                     <p>2022.02.-2022.04.</p>
@@ -167,10 +211,9 @@
                     </ul>
                 </div>
             </div>
-
         </div>
-    
     </section>
+    
     <footer>
         <p>Made by SEOYOUNG CHO (at) kangwon.ac.kr</p>
     </footer>
