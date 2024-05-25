@@ -2,6 +2,7 @@
     --text-color: #263343;
     --background-color: #f0f4f5;
     --accent-color: #E4F0D5;
+    --header-color: #497649;
 }
 
 .page {
@@ -25,6 +26,8 @@ a {
     color: var(--text-color);
 }
 
+/* navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -37,14 +40,14 @@ a {
     align-items: center;
 }
 
-.navbar_logo>img {
+.navbar_logo > img {
     width: 50px;
     margin-right: 5px;
 }
 
-.navbar_logo>a {
+.navbar_logo > a {
     font-size: 2.5em;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .navbar_menu {
@@ -68,6 +71,48 @@ a {
     right: 32px;
     display: none;
 }
+
+/* section */
+
+section {
+    padding: 0 15px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.page {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.section_header {
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--header-color);
+}
+
+.section_introduce_rol1 {
+    display: flex;
+}
+
+.section_introduce_rol1 > img {
+    border-radius: 50%;
+    width: 250px;
+}
+
+.section_introduce_rol1 > table {
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .navbar {
