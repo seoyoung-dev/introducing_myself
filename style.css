@@ -3,6 +3,7 @@
     --background-color: #f0f4f5;
     --accent-color: #E4F0D5;
     --header-color: #497649;
+    --gray-color: #DFDFDF;
 }
 
 .page {
@@ -83,6 +84,9 @@ section {
     padding: 0 15px;
     margin-top: 30px;
     width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 120px;
 }
 
 .page {
@@ -110,6 +114,18 @@ section {
     margin-left: 40px;
 }
 
+
+
+footer {
+    height: 120px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray-color);
+    color: var(--background-color);
+}
 
 
 
