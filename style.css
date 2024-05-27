@@ -32,8 +32,7 @@ body {
     color: var(--text-color);
     font-family: "Noto Sans KR", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+
 }
 
 a {
@@ -97,14 +96,16 @@ section {
     padding: 0 15px;
     margin-top: 30px;
     width: 100%;
-    height: auto;
-    min-height: 100%;
+    float: bottom;
+    /* height: 100vh; */
+    min-height: calc(100vh - 10rem);
     padding-bottom: 120px;
 }
 
 .page {
     width: 650px;
     margin: 0 auto;
+    overflow: clip;
 }
 
 .section_header {
@@ -151,10 +152,15 @@ section {
 }
 
 .section_experience_row div:first-child {
-    width: 170px;
+    width: 205px;
+    overflow-wrap: break-word;
     flex-shrink: 0;
     flex-grow: 0;
     flex-basis: 1;
+}
+
+.section_experience_row div:first-child p {
+    overflow: hidden;
 }
 
 .section_experience_row li {
@@ -176,16 +182,13 @@ section {
 
 
 footer {
-    height: 120px;
-    position: relative;
+    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--gray-color);
     color: var(--background-color);
 }
-
-
 
 
 
@@ -203,7 +206,6 @@ footer {
     }
 
     .page p {
-        white-space: 
         word-wrap: break-all;
     }
     .navbar {   
@@ -253,10 +255,9 @@ footer {
     }
 
     .project_description {
-        displat: flex;
+        display: flex;
         width: 90%;
     }
-    nav
 }
 
 @media screen and (max-width: 480px) {
