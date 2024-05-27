@@ -6,6 +6,11 @@
     --gray-color: #DFDFDF;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .page {
     display: none;
 }
@@ -190,7 +195,16 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    .navbar {
+    * {
+        padding: 0 5px;
+        overflow-x: hidden;
+    }
+
+    p {
+        white-space: 
+        word-wrap: break-word;
+    }
+    .navbar {   
         flex-direction: column;
         align-items: flex-start;
     }
@@ -217,5 +231,17 @@ footer {
 
     .navbar_menu.active {
         display: flex;
+    }
+
+    .section_introduce_rol1 {
+        flex-direction: column;
+    } 
+
+    .section_introduce_rol1 > table {
+        margin-left: 0;
+    }
+
+    .section_introduce_rol1 > img {
+        margin-bottom: 30px;
     }
 }
