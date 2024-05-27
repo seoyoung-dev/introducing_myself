@@ -141,8 +141,20 @@ section {
     list-style: none
 }
 
-.section_experience_rol {
+.section_experience_row {
     display: flex;
+}
+
+.section_experience_row div:first-child {
+    width: 170px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 1;
+}
+
+.section_experience_row li {
+    padding-top: 5px;
+    white-space: wrap;
 }
 
 .section_experience_header {
@@ -156,11 +168,6 @@ section {
 .last_row {
     margin-bottom: 40px;
 }
-
-
-
-
-
 
 
 footer {
