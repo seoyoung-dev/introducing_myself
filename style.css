@@ -191,18 +191,20 @@ footer {
 
 
 
-
-
-
 @media screen and (max-width: 768px) {
     * {
-        padding: 0 5px;
         overflow-x: hidden;
+        margin: 0;
     }
 
-    p {
+    .page {
+        width: 90%;
+        padding-right: 10px;
+    }
+
+    .page p {
         white-space: 
-        word-wrap: break-word;
+        word-wrap: break-all;
     }
     .navbar {   
         flex-direction: column;
@@ -226,7 +228,7 @@ footer {
     }
 
     .navbar_toggle {
-        display: block;
+        display: flex;
     }
 
     .navbar_menu.active {
@@ -243,5 +245,32 @@ footer {
 
     .section_introduce_rol1 > img {
         margin-bottom: 30px;
+        padding-left: 50px;
+    }
+
+    .section_experience_row {
+        flex-direction: column;
+    }
+
+    .project_description {
+        displat: flex;
+        width: 90%;
+    }
+    nav
+}
+
+@media screen and (max-width: 480px) {
+    .navbar_logo img {
+        width: 35px;
+    }
+
+    .navbar_logo a {
+        font-size: 2em;
+    }
+
+    #hamburger {
+        width: 28px;
+        /* position: relative;
+        bottom: 1px; */
     }
 }
